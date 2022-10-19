@@ -5,6 +5,7 @@
   "repository": "https://github.com/reejamathew/MDEV1012-F2022-Week6.git",
   "author": "Reeja Mathew <200547300@student.georgianc.on.ca>",
   "license": "MIT",
+  "homepage":"https://github.com/reejamathew/MDEV1012-F2022-Week6",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -20,6 +21,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.2.2",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
